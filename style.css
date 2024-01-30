@@ -1,0 +1,27 @@
+body {
+    background-color: #BAEFDE;
+    font-family: 'Oregano', cursive;
+}
+nav {
+    display: flex;    
+    position: fixed;
+    top: 0;
+    height: auto;
+    width: 100%;
+}
+nav a {
+    text-decoration: none;
+    justify-items: right;
+    margin: 5px;
+    padding: 0 10px;
+    border: 1px solid #5FA0DE;
+}
+.main {
+    background-image: url(pexels-miguel-á-padriñán-255379.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    text-align: center;
+    padding: 25px;
+}
