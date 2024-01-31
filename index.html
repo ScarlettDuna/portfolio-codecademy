@@ -17,27 +17,48 @@
         <a href="#contact-me">Contact</a>
     </nav>
     <div class="main">
-        <p>Hi! I'm Scarlett</p>
-        <p>Full Stack Engineer</p>
-        <p>Newbie but really to eat the world</p>
+        <h1>Hi! I'm Scarlett</h1>
+        <h2>Full Stack Engineer</h2>
+        <h3>Newbie but really to eat the world</h3>
+        <br>
         <button>Download CV</button>
     </div>
     <div id="about-me">
-        <div class="about-me-text">
-
+        <div class="card about-me-text">
+            <h3>About Me</h3>
+            <p>Lorem ipsum dolor sit amet. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>Aliquam faucibus purus in massa tempor nec feugiat nisl. Eget duis at tellus at urna condimentum mattis. Adipiscing tristique risus nec feugiat in fermentum posuere urna nec. Blandit libero volutpat sed cras ornare arcu dui vivamus arcu. Lectus sit amet est placerat in. Hendrerit gravida rutrum quisque non tellus orci ac auctor augue. Morbi tempus iaculis urna id volutpat lacus laoreet.</p>
         </div>
-        <div class="picture"></div>
-        <div class="social-media"></div>
+        <div class="card picture">
+            <img src="./coding_languages.webp">
+            <ul>
+                <li><a>Twitter</a></li>
+                <li><a>GitHub</a></li>
+                <li><a>Facebook</a></li>
+                <li><a>Instagram</a></li>
+            </ul>
+        </div>
+        
     </div>
+    <h2 class="proj-title">My projects</h2>
     <div id="projects">
-        <div class="card thai-culture"></div>
-        <div class="card dice-game"></div>
-        <div class="card xmas-plans"></div>
-        <div class="card old-portfolio"></div>
+        <div class="card thai-culture">
+            <h3>Thai culture project</h3>
+            <img src="./Thaiculture.PNG">
+        </div>
+        <div class="card dice-game">
+            <h3>Dice Game with JS</h3>
+            <img src="./DiceGame.PNG">
+        </div>
+        <div class="card xmas-plans">
+            <h3>GawinKrist web</h3>
+            <img src="./GawinKrist.PNG">
+        </div>
     </div>
     <div id="skills">
         <div class="education">
             <div>
+                <h3>My studies</h3>
                 <ul>
                     <li>Codecademi Fron-End Engineer</li>
                     <li>Udemi Full Stack Bootcamp</li>
@@ -49,6 +70,7 @@
         </div>
         <div class="experience">
             <div>
+                <h3>My Experience</h3>
                 <ul>
                     <li>Freelance Web Developer</li>
                     <li>Call Center Team Leader</li>
@@ -60,12 +82,28 @@
         </div>
     </div>
     <footer id="contact-me">
-        <div class="contact-me form"></div>
-        <div class="contact-links"></div>
+        <div class="contact-me form">
+            <form method="post" action="">
+                Your name:
+                <input type="text" name="fname" />
+                <br />
+        
+                Your email:
+                <input type="text" name="email" />
+                <br />
+
+                Your message:
+                <input type="text" name="message" />
+                <br />
+                <input type="submit" value="Submit" />
+            </form>
+        </div>
+        <div class="contact-links">
+            <a href="">Twitter</a>
+            <a href="">Instagram</a>
+            <p>email: arantxa.rg.1991@hotmail.com</p>
+        </div>
     </footer>
-
-
-
 
 
     <script src="index.js"></script>

@@ -1,27 +1,114 @@
 body {
     background-color: #BAEFDE;
     font-family: 'Oregano', cursive;
+    font-size: 16px;
 }
 nav {
-    display: flex;    
-    position: fixed;
-    top: 0;
+    display: flex; 
+    justify-content: right;   
     height: auto;
     width: 100%;
+    background-color: #5FA0DE;
 }
 nav a {
     text-decoration: none;
-    justify-items: right;
-    margin: 5px;
     padding: 0 10px;
-    border: 1px solid #5FA0DE;
+    margin: 0 15px;
 }
 .main {
-    background-image: url(pexels-miguel-á-padriñán-255379.jpg);
+    background-image: url(pexels.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    width: 100%;
     text-align: center;
     padding: 25px;
+}
+#about-me {
+    height: 300px;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+
+}
+.about-me-text {
+    text-align: center;
+    padding: 20px;
+    overflow: auto;
+}
+.picture {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.picture img {
+    margin: 10px;
+    width: 85%; 
+    height: auto;
+    border-radius: 15px;
+    border: 3px solid #5FA0DE; 
+}
+.picture ul {
+    margin: 0;
+}
+.picture li {
+    list-style-type: none;
+    display: inline;
+    padding: 0 10px;
+    margin: 0;
+}
+.proj-title {
+    text-align: center;
+    margin-block: 5px;
+}
+#projects {
+    min-height: 200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+#projects h3 {
+    text-align: center;
+}
+.thai-culture img,
+.dice-game img,
+.xmas-plans img {
+    max-width: 280px;
+    height: auto;
+    margin: 10px;
+}
+#skills {
+    display: grid;
+    grid-template-areas: '.education .experience';
+    justify-content: center;
+}
+#skills li {
+    list-style: none;
+}
+.education,
+.experience {
+    padding: 50px;
+    line-height: 1rem;
+}
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding-block: 15px;
+    background-color: #5FA0DE;
+}
+@media only screen and (max-width: 600px) {
+    #projects,
+    #about-me, 
+    #skills {
+        display: flex;
+        flex-flow: wrap;
+        flex-basis: auto;
+    }
+    .thai-culture img,
+    .dice-game img,
+    .xmas-plans img {
+        max-width: 380px;
+        height: auto;
+        margin: 10px;
+}
 }
