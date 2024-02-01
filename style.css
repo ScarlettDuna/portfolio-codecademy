@@ -56,6 +56,11 @@ nav a {
     padding: 0 10px;
     margin: 0;
 }
+.picture li:hover {
+    font-weight: bolder;
+    background-color: aquamarine;
+    border-radius: 25%;
+}
 .proj-title {
     text-align: center;
     margin-block: 5px;
